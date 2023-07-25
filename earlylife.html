@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <title>Taylor Swift's Early Life</title>
+        <script>
+            // TODO: Add code to check answers to questions
+            document.addEventListener('DOMContentLoaded', function() {
+                // When correct answer is clicked, change color to green
+                let correct = document.querySelector('.correct');
+                correct.addEventListener('click', function() {
+                    correct.style.backgroundColor = 'green';
+                    document.querySelector('#feedback1').innerHTML = 'Correct!';
+                });
+
+                // When any incorrect answer is clicked, change color to red
+                let incorrects = document.querySelectorAll('.incorrect');
+                for (let i = 0; i < incorrects.length; i++) {
+                    incorrects[i].addEventlistener('click', function() {
+                        incorrects[i].style.backgroundColor = 'red';
+                        document.querySelector('#feedback1').innerHTML = 'Incorrect';
+                    });
+                }
+            });
+        </script>
+    </head>
+    <body class="early">
+        <nav class="nav navbar navbar-expand-lg navbar-dark lavender">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html" style="color:#00008B;"><strong>Taylor Swift</strong></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <strong>More Info</strong>
+                    </a>
+                    <ul class="dropdown-menu" style="background-color:#00008B;">
+                      <li><a class="dropdown-item" href="earlylife.html"style="color:#0066CC;">Early Life</a></li>
+                      <li><a class="dropdown-item" href="discography.html"style="color:#0066CC;">Discography</a></li>
+                      <li><a class="dropdown-item" href="awards.html"style="color:#0066CC;">Awards</a></li>
+                      <li><a class="dropdown-item" href="cats.html"style="color:#0066CC;">Her Cats</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <div class="container text-center house earlytext">
+            <div class="row">
+              <div class="col">
+                <br><br>
+                <h1>Taylor Swift's Early Life</h1>
+                <div>
+                    Taylor Swift was born to Andrea Finlay and Scott Kingsley Swift in West Reading, Pennsylvania, on December 13, 1989.
+                    She began music at an early age and by 11 she was singing "The Star-Spangled Banner" at a 76ers basketball game. By 14, she had signed with Sony/ATV
+                    and moved to Nashville, Tennessee where she faked a country accent (hihi). Since then, she has obviously been a huge success winning hundreds of awards
+                    and being instantly recognizable by all.
+                </div>
+              </div>
+              <div class="col">
+                <br><br>
+                <h1>Exes - Swiftie Etiquite</h1>
+                <div>
+                  Due to the recent breakup, it is a good time to remind everyone NOT to speculate about Taylor's personal life online. Get a job. Stay away from her.
+                  Sending love and yas.
+                </div>
+              </div>
+              <div class="col">
+                <br><br>
+                <div>
+                    <h2>Trivia Time!</h2>
+                </div>
+                <div>
+                    <h4>Why do we hate Scooter Braun?</h4>
+                    <button class="incorrect">Man</button>
+                    <button class="incorrect">White</button>
+                    <button class="incorrect">Straight</button>
+                    <button class="correct">He bought Taylor's masters</button>
+
+                    <p id="feedback1"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" autohide: false>
+            <div class="toast-header">
+              <img src="https://pbs.twimg.com/media/EWo623RX0AIuoU2.jpg:large" class="rounded me-2" alt="Taylor Swift selfie">
+              <strong class="me-auto">Taylor Swift Herself</strong>
+              <small class="text-muted">0 mins ago</small>
+              <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+              Hello! Make sure to stream Fearless TV, Red TV, Midnights, and all of her other albums!<br>If you like Taylor Swift, check out boygenius!
+            </div>
+          </div>
+    </body>
+</html>

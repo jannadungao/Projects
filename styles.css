@@ -1,0 +1,106 @@
+nav {
+    font-family: Helvetica;
+}
+
+img {
+    width: 400px;
+    height: auto;
+}
+
+
+.centered {
+    text-align: center;
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
+.helvetica {
+    font-family: helvetica;
+}
+
+a, a:link, a:visited {
+    color: #808080;
+    text-decoration: none;
+
+}
+
+.lightblue {
+    background-color: lightblue;
+}
+
+.lavender {
+    background-color: #CDB0EE;
+}
+
+.debut {
+    color: #34f3ff;
+}
+
+.award {
+    width: 2000px;
+    height: auto;
+}
+
+.awardfont {
+    font-family: helvetica;
+    font-size: 40px;
+    color: #000080;
+}
+
+.life {
+    margin-right: 1000px;
+}
+
+.house {
+    color: white;
+}
+
+.early {
+    background: url(https://miro.medium.com/v2/resize:fit:739/1*wHsM4lnTwnnkszc-depMbA.jpeg);
+    background-size: 2000px 1000px;
+}
+
+.earlytext {
+    color: #2160ff;
+}
+.cats {
+    background-color:rgb(250, 210, 216)
+}
+
+.catstabs {
+    text-align: center;
+    font-family: helvetica;
+}
+/* Homepage Taylor Swift Title */
+  p {
+    font-size: 8vw;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1;
+    min-height: 100vh;
+    display: flex;
+    color: #fff;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 900;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .fancy {
+    @supports (background-clip: text) or (-webkit-background-clip: text) {
+      background-image:
+        url("data:image/svg+xml,%3Csvg width='2250' height='900' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg%3E%3Cpath fill='%2300A080' d='M0 0h2255v899H0z'/%3E%3Ccircle cx='366' cy='207' r='366' fill='%2300FDCF'/%3E%3Ccircle cx='1777.5' cy='318.5' r='477.5' fill='%2300FDCF'/%3E%3Ccircle cx='1215' cy='737' r='366' fill='%23008060'/%3E%3C/g%3E%3C/svg%3E%0A");
+      background-size: 110% auto;
+      background-position: center;
+      color: transparent;
+      -webkit-background-clip: text;
+      background-clip: text;
+    }
+  }
